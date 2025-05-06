@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inosha Music Institute</title>
+  <title>Inosha Music Academy</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -14,15 +14,22 @@
       font-family: 'Raleway', sans-serif;
     }
     body {
-      background-color: #f4f4f9;
+      background: linear-gradient(to right, #f8f8ff, #ffe4e1);
       color: #333;
       line-height: 1.6;
     }
     header {
-      background: #111;
+      background: linear-gradient(90deg, #ff7e5f, #feb47b);
       color: #fff;
-      padding: 2rem 0;
+      padding: 2rem 1rem;
       text-align: center;
+      position: relative;
+    }
+    header img.logo {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      width: 80px;
     }
     header h1 {
       font-size: 2.5rem;
@@ -30,116 +37,175 @@
     }
     header p {
       font-size: 1.2rem;
-      color: #ccc;
+      font-style: italic;
     }
     nav {
-      background: #222;
+      background: #111;
       text-align: center;
-      padding: 1rem 0;
+      padding: 1rem;
     }
     nav a {
       color: #fff;
-      margin: 0 1rem;
+      margin: 0 0.75rem;
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
     }
     nav a:hover {
       color: #ffb400;
     }
     section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
+      padding: 3rem 1rem;
+      max-width: 1200px;
       margin: auto;
     }
     .hero {
       text-align: center;
+      background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 5rem 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
     }
     .hero h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
     .hero p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
-    .courses, .about, .contact {
-      margin-top: 3rem;
+    .about, .courses, .contact, .testimonials {
+      margin-top: 2rem;
     }
     .course-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
       margin-top: 2rem;
     }
     .course {
-      background: #fff;
+      background: #fefefe;
       padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      border-radius: 12px;
+      border-left: 5px solid #ff7e5f;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
-    .course:hover {
-      transform: translateY(-5px);
+    .testimonials blockquote {
+      font-style: italic;
+      color: #444;
+      margin: 1.5rem 0;
+      padding-left: 1rem;
+      border-left: 4px solid #ff7e5f;
+      background: #fffafa;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .contact-buttons {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .contact-buttons a {
+      flex: 1 1 120px;
+      text-align: center;
+      padding: 0.75rem 1rem;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+    .contact-buttons a.call {
+      background: #007BFF;
+    }
+    .contact-buttons a.map {
+      background: #ff5722;
     }
     footer {
       background: #111;
-      color: #ccc;
+      color: #eee;
       text-align: center;
       padding: 2rem 1rem;
       margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .hero p, header p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Inosha Music Institute</h1>
-    <p>Inspiring Passion, Creating Artists</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Music-icon.svg/2048px-Music-icon.svg.png" alt="Inosha Logo" class="logo">
+    <h1>Inosha Music Academy</h1>
+    <p>Where Passion Becomes Sound</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
     <a href="#courses">Courses</a>
+    <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section class="hero">
-    <h2>Welcome to Your Musical Journey</h2>
-    <p>Join our community of musicians and let your talent shine. Whether you're a beginner or a pro, we've got something for you.</p>
+    <h2>Unleash Your Musical Brilliance</h2>
+    <p>Learn from world-class professionals in a vibrant and inspiring environment – Violin and Guitar like never before!</p>
   </section>
 
   <section id="about" class="about">
     <h2>About Us</h2>
-    <p>Inosha Music Institute is dedicated to providing world-class music education to students of all levels. With professional instructors, state-of-the-art facilities, and a nurturing environment, we help students reach their full musical potential.</p>
+    <p>Inosha Music Academy offers expert instruction in violin and guitar for students of all levels. With experienced professional teachers and a personalized curriculum, we nurture each student’s unique musical path. Based in Bangalore, we create a space where music, creativity, and excellence flourish together.</p>
   </section>
 
   <section id="courses" class="courses">
-    <h2>Our Courses</h2>
+    <h2>Courses Offered</h2>
     <div class="course-list">
       <div class="course">
-        <h3>Piano</h3>
-        <p>Classical, Jazz, and Contemporary piano training for all ages.</p>
+        <h3>Violin</h3>
+        <p>Master classical and modern violin techniques from passionate and certified instructors.</p>
       </div>
       <div class="course">
         <h3>Guitar</h3>
-        <p>Learn acoustic, electric, and bass guitar with expert guidance.</p>
-      </div>
-      <div class="course">
-        <h3>Vocals</h3>
-        <p>Develop your voice with techniques in pitch, range, and style.</p>
-      </div>
-      <div class="course">
-        <h3>Drums</h3>
-        <p>Master rhythm and timing across genres from rock to funk.</p>
+        <p>Personalized coaching in acoustic and electric guitar by highly trained professionals.</p>
       </div>
     </div>
   </section>
 
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Students Say</h2>
+    <blockquote>"The best place to learn violin – supportive teachers and a great environment!" – Sneha M.</blockquote>
+    <blockquote>"Professional, fun, and inspiring. My guitar skills improved drastically." – Rahul K.</blockquote>
+    <blockquote>"It feels like a global standard music school right in Bangalore! Highly recommended." – Priya D.</blockquote>
+  </section>
+
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <p>Email: info@inoshamusic.com<br>Phone: +94 77 123 4567<br>Location: Colombo, Sri Lanka</p>
+    <p>
+      📍 Address: R.K Residency, Flat No. 1B, Kanchamarana Halli,<br>
+      Varthur Hobli, Bangalore 560087, Karnataka<br>
+      📞 Phone: 7676308667
+    </p>
+    <div class="contact-buttons">
+      <a class="call" href="tel:7676308667">Call Now</a>
+      <a href="https://wa.me/917676308667" target="_blank">WhatsApp Us</a>
+      <a class="map" href="https://www.google.com/maps/place/R.K+Residency,+Kanchamarana+Halli,+Bangalore" target="_blank">View on Map</a>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Inosha Music Institute. All rights reserved.</p>
+    <p>&copy; 2025 Inosha Music Academy. All rights reserved. Crafted with passion for the art of sound.</p>
   </footer>
 </body>
 </html>
